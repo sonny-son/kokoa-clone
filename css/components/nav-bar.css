@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav_messageNumber {
+  background-color: tomato;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  left: 19px;
+  bottom: 14px;
+}
+.nav_settingNotification {
+  background-color: tomato;
+  display: flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 35px;
+  bottom: 28px;
+}
