@@ -27,7 +27,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-gray);
 }
 .user-component__avatar--xl {
   width: 65px;
