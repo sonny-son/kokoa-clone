@@ -10,7 +10,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <title>Friends-kokoa-clone</title>
+    <title>More-kokoa-clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -28,59 +28,42 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
-      <div class="screen-header__icons">
+    <header class="alt-screen-header">
+      <div class="alt-screen-header__column">
+        <span><i class="fas fa-angle-left fa-2x"></i></span>
+      </div>
+      <div class="alt-screen-header__column">
+        <h1 class="alt-screen-header__title">Settings</h1>
+      </div>
+      <div class="alt-screen-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
     <main class="friend-screen">
-      <div class="icon-raw">
-        <div class="icon-raw__icon">
-          <i class="fas fa-qrcode"></i><span>QR Code</span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="far fa-address-book"></i><span>Add by Contacts</span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="fas fa-fingerprint"></i><span>Add by Id </span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="far fa-envelope"></i><span>Invite</span>
-        </div>
-      </div>
-      <div class="recomended-friends">
-        <h6 class="recomended-friends__title">Recomended Friends</h6>
-        <span>You have no recomended friends</span>
-      </div>
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4>Open Chat</h4>
-          <span
-            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
-          ></span>
-        </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
-            <div class="open-post__member">
-              <img src="blanckprofile.jpg" />
-              <span class="open-post__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
+      <ul class="settings-list">
+        <li class="settings-setting">
+          <div class="settings-setting__column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-          <div class="open-post__column">
-            <div class="opent-post__photo">
-              <img src="blanckprofile.jpg" />
-              <span><i class="far fa-heart fa-sm"></i>326</span>
-            </div>
+          <div class="settings-setting__column"></div>
+        </li>
+        <li class="settings-setting">
+          <div class="settings-setting__column">
+            <i class="fas fa-flask"></i>
+            <span>Kakao Lab</span>
           </div>
-        </div>
-      </div>
+          <div class="settings-setting__column"></div>
+        </li>
+        <li class="settings-setting">
+          <div class="settings-setting__column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings-setting__column">Last Version</div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
