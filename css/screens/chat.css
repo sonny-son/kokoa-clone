@@ -13,11 +13,21 @@
   background-color: #abc1d1;
   z-index: 1;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main-chat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 140px;
+  animation: fadeIn 0.3s linear;
 }
 .chat_timestamp {
   color: white;
@@ -27,10 +37,20 @@
   border-radius: 25px;
   margin-bottom: 15px;
 }
+@keyframes fadeInToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
+  animation: fadeInToRight 0.5s linear;
 }
 .message-row__img {
   height: 45px;
@@ -60,8 +80,18 @@
   display: flex;
   align-items: flex-end;
 }
+@keyframes fadeInToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeInToLeft 0.5s linear;
 }
 .message-row--own .message__bubble {
   background-color: var(--yellow);

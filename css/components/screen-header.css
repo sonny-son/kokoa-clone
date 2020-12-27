@@ -13,3 +13,14 @@
 .screen-header__icons span {
   margin-left: 20px;
 }
+@keyframes spinCog {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: none;
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: spinCog 1s linear infinite;
+}
