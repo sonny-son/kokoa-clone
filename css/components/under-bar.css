@@ -1,0 +1,27 @@
+.underBar{
+    background-color: rgba(0, 0, 0,0);
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    bottom: -63px;
+    width: 100%;
+  box-sizing: border-box;
+  padding: 20px 50px;
+}
+.underBar i{
+    font-size: 30px;
+    color:white
+}
+@keyframes underBarUp{
+    from{
+        opacity: 0;
+        bottom:-63px;
+    }
+    to{
+        background-color:rgba(0, 0, 0, 0.8);
+        bottom:0px;
+    }
+}
+.underBar:hover{
+    animation: underBarUp 0.3s linear forwards;
+}
